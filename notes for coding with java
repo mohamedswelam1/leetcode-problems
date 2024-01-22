@@ -1,6 +1,8 @@
 
         // Find the length of the string
         int length = myString.length();
-        // access character form string in specific index
+        // access character form string in a specific index
         s.charAt(index)
+        // hashmap
+        Map<Character, Character> bracketLookup = new HashMap<>(3);
 
