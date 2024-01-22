@@ -1,8 +1,24 @@
 
-        // Find the length of the string
-        int length = myString.length();
-        // access character form string in a specific index
-        s.charAt(index)
-        // hashmap
+        ////////////// string 
+        s.charAt(index)                                     //  access character form string in a specific index
+        int length = myString.length();                     // Find the length of the string
+        toLowerCase().replaceAll("[^a-z0-9]", "")           //Remove all spaces and special characters
+
+
+        ///////////////////// hashmap
         Map<Character, Character> bracketLookup = new HashMap<>(3);
+        map.containsKey(diff))
+        map.get(diff)
+        map.put(nums[i],I);
+
+
+        //////////////////// stack 
+        stack.isEmpty()
+        stack.add(s.charAt(i));
+        stack.pop();
+        stack.peek()=='['
+        Stack<Character> stack = new Stack<>();
+
+
+
 
