@@ -1,0 +1,24 @@
+class Solution {
+    public int characterReplacement(String s, int k) {
+     
+        int[] arr = new int[26];
+        int output = 0 ;
+        int first = 0 ;
+        int max = 0 ;
+        
+        if(s.length() == 0 ) return  output ; 
+        
+        for(int second = 0 ; second < s.length() ; second++ ){
+            // Indexing should be based on lowercase letters 'a'
+            arr[s.charAt(second) - 'A']++ ;
+            max = Math.max(max, arr[s.charAt(second) - 'A']);
+           
+            if(second - first + 1 - max > k){
+                arr[s.charAt(first) - 'A']-- ; 
+                first++ ;
+            }
+            output = Math.max(output , second - first + 1);
+        }
+        return output ; 
+    }
+}
